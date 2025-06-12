@@ -3,43 +3,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MD Israk Jahin Tasin - Digital Marketing Courses</title>
+
+  <!-- Tailwind CSS CDN and Config -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            'primary-bg': '#0A192F',      // Very Dark Blue
-            'secondary-bg': '#112240',    // Dark Navy Blue
-            'card-bg': '#172A45', // Slightly Lighter Navy for cards, was #1D3A5F, adjusted for better contrast
-            'surface': '#0A192F',         // Can be same as primary or slightly different
-            'primary-text': '#CCD6F6',    // Lightest Slate/Pale Blue
-            'secondary-text': '#8892B0',  // Light Slate Blue/Grey
-            'accent-green': '#64FFDA',    // Bright Mint Green
-            'accent-green-hover': '#52D9BC',// Slightly darker mint
-            'accent-blue': '#5D93E1',     // A calm, friendly blue
-            'accent-blue-hover': '#4A7BC7', // Darker calm blue
-            'highlight-bg': '#233554',   // For subtle highlights or active states
-            'error': '#ef5350',          // Material Red
-            // Previous colors, kept for reference or specific elements if needed
-            'old-primary-bg': '#0F172A',
-            'old-secondary-bg': '#1E293B',
-            'old-card-bg': '#334155',
-            'old-accent': '#38BDF8',
-            'old-accent-hover': '#0EA5E9',
+            'primary-bg': '#0A192F',
+            'secondary-bg': '#112240',
+            'card-bg': '#172A45',
+            'surface': '#0A192F',
+            'primary-text': '#CCD6F6',
+            'secondary-text': '#8892B0',
+            'accent-green': '#64FFDA',
+            'accent-green-hover': '#52D9BC',
+            'accent-blue': '#5D93E1',
+            'accent-blue-hover': '#4A7BC7',
+            'highlight-bg': '#233554',
+            'error': '#ef5350',
           },
           fontFamily: {
             sans: ['Inter', 'sans-serif'],
-            // เพิ่มเติม: หากต้องการใช้ Poppins สามารถ uncomment ด้านล่าง
-            // poppins: ['Poppins', 'sans-serif'],
           },
           boxShadow: {
             'md': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
             'lg': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
             'xl': '0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04)',
-            'inner-accent': 'inset 0 0 0 2px #64FFDA', // For specific highlights
+            'inner-accent': 'inset 0 0 0 2px #64FFDA',
           },
           animation: {
             'fade-in-up': 'fadeInUp 0.5s ease-out forwards',
@@ -64,7 +59,11 @@
       }
     }
   </script>
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Your Custom Styles from original index.html -->
   <style>
     html {
       scroll-behavior: smooth;
@@ -80,7 +79,6 @@
       border-radius: 10px;
       border: 2px solid #0A192F; /* primary-bg */
     }
-    /* Helper for staggered animations */
     .animation-delay-100 { animation-delay: 100ms; }
     .animation-delay-200 { animation-delay: 200ms; }
     .animation-delay-300 { animation-delay: 300ms; }
@@ -125,7 +123,9 @@
   "imports": {
     "react": "https://esm.sh/react@^19.1.0",
     "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
-    "react/": "https://esm.sh/react@^19.1.0/"
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "vite": "https://esm.sh/vite@^6.3.5",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^4.5.1"
   }
 }
 </script>
@@ -133,6 +133,7 @@
 </head>
 <body class="bg-primary-bg text-primary-text font-sans">
   <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
+  <script type="module" src="/src/index.tsx"></script> 
+<script type="module" src="/index.tsx"></script>
 </body>
 </html>
