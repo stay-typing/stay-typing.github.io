@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MD Israk Jahin Tasin - Digital Marketing Courses</title>
+
+  <!-- Tailwind CSS CDN and Config -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'primary-bg': '#0A192F',
+            'secondary-bg': '#112240',
+            'card-bg': '#172A45',
+            'surface': '#0A192F',
+            'primary-text': '#CCD6F6',
+            'secondary-text': '#8892B0',
+            'accent-green': '#64FFDA',
+            'accent-green-hover': '#52D9BC',
+            'accent-blue': '#5D93E1',
+            'accent-blue-hover': '#4A7BC7',
+            'highlight-bg': '#233554',
+            'error': '#ef5350',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          boxShadow: {
+            'md': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+            'lg': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+            'xl': '0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04)',
+            'inner-accent': 'inset 0 0 0 2px #64FFDA',
+          },
+          animation: {
+            'fade-in-up': 'fadeInUp 0.5s ease-out forwards',
+            'slide-in-left': 'slideInLeft 0.5s ease-out forwards',
+            'pop-in': 'popIn 0.4s ease-out forwards',
+          },
+          keyframes: {
+            fadeInUp: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            slideInLeft: {
+              '0%': { opacity: '0', transform: 'translateX(-20px)' },
+              '100%': { opacity: '1', transform: 'translateX(0)' },
+            },
+            popIn: {
+              '0%': { opacity: '0', transform: 'scale(0.95) translateY(10px)' },
+              '100%': { opacity: '1', transform: 'scale(1) translateY(0)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Your Custom Styles from original index.html -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    body::-webkit-scrollbar-track {
+      background: #0A192F;
+      /* primary-bg */
+    }
+
+    body::-webkit-scrollbar-thumb {
+      background-color: #64FFDA;
+      /* accent-green */
+      border-radius: 10px;
+      border: 2px solid #0A192F;
+      /* primary-bg */
+    }
+
+    .animation-delay-100 {
+      animation-delay: 100ms;
+    }
+
+    .animation-delay-200 {
+      animation-delay: 200ms;
+    }
+
+    .animation-delay-300 {
+      animation-delay: 300ms;
+    }
+
+    .animation-delay-400 {
+      animation-delay: 400ms;
+    }
+
+    .animation-delay-500 {
+      animation-delay: 500ms;
+    }
+
+    .material-button {
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.15s ease;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .material-button:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transform: translateY(-1px);
+    }
+
+    .material-button:active {
+      transform: translateY(0px);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .material-button-accent {
+      background-color: #64FFDA;
+      /* accent-green */
+      color: #0A192F;
+      /* primary-bg for text */
+    }
+
+    .material-button-accent:hover {
+      background-color: #52D9BC;
+      /* accent-green-hover */
+    }
+
+    .material-button-outlined {
+      background-color: transparent;
+      color: #64FFDA;
+      /* accent-green */
+      border: 2px solid #64FFDA;
+    }
+
+    .material-button-outlined:hover {
+      background-color: rgba(100, 255, 218, 0.1);
+      /* accent-green with alpha */
+    }
+  </style>
+
+  <link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "vite": "https://esm.sh/vite@^6.3.5",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^4.5.1"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/digital-marketing-portfolio/assets/index-3a2dd384.js"></script>
+</head>
+
+<body class="bg-primary-bg text-primary-text font-sans">
+  <div id="root"></div>
+  
+  <!--<script type="module" src="/index.tsx"></script>-->
+</body>
+
+</html>
