@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://stay-typing.github.io/digital-marketing-portfolio",
+  "homepage": "https://stay-typing.github.io",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
